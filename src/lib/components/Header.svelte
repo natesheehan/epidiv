@@ -10,7 +10,7 @@
         <a href="/" class="font-bold text-xxl hover:text-blue-600 transition">EpiDiv</a>
       </li>
       <li class="py-4 md:py-6 flex-1 text-center">
-        <a href="#about" class="hover:text-blue-600 transition">About</a>
+        <a href="#about" class="hover:text-blue-600 transition">Info</a>
       </li>
       <li class="py-4 md:py-6 flex-1 text-center">
         <a href="/schedule" class="hover:text-blue-600 transition">Schedule</a>
