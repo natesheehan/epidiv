@@ -5,9 +5,9 @@
 
 <header class="w-full bg-white border-b font-space">
   <nav class="max-w-7xl mx-auto px-4">
-    <ul class="flex flex-col md:flex-row justify-between items-center text-lg md:text-xl font-medium uppercase tracking-wide">
+    <ul class="flex flex-col md:flex-row justify-between items-center text-lg md:text-xl font-medium tracking-wide">
       <li class="py-4 md:py-6 flex-1 text-center">
-        <a href="/" class="hover:text-blue-600 transition">EpiDiv</a>
+        <a href="/" class="font-bold text-xxl hover:text-blue-600 transition">EpiDiv</a>
       </li>
       <li class="py-4 md:py-6 flex-1 text-center">
         <a href="#about" class="hover:text-blue-600 transition">About</a>

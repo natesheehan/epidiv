@@ -1,7 +1,6 @@
 <script>
   import { onMount, onDestroy } from "svelte";
 
-  // ✍️ Edit this to change the copy
   const TEXT = "We are an international reading group who meet twice a month to discuss texts in the philosophy of science, feminist literature, and critical data studies. To join us, hit the contact button in the footer; or if you’re interested in our reading list, check out the schedule.";
 
   // ⏱️ Timing (ms)
