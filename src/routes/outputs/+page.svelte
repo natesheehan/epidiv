@@ -49,7 +49,7 @@
               <ul class="mt-1 space-y-1 text-sm">
                 {#each o.links as l}
                   <li>
-                    <a class="underline underline-offset-2 hover:text-blue-700" href={l.url} target="_blank" rel="noopener noreferrer">
+                    <a class="underline underline-offset-2 hover:text-gray-700" href={l.url} target="_blank" rel="noopener noreferrer">
                       {l.label}
                     </a>
                   </li>
@@ -83,7 +83,7 @@
               </td>
               <td class="align-top px-4 py-3 font-semibold">
                 {#if o.links && o.links[0]}
-                  <a class="underline underline-offset-2 hover:text-blue-700"
+                  <a class="underline underline-offset-2 hover:text-gray-700"
                      href={o.links[0].url} target="_blank" rel="noopener noreferrer">{o.title}</a>
                 {:else}
                   {o.title}
@@ -95,7 +95,7 @@
                   <ul class="list-disc pl-5 space-y-1">
                     {#each o.links as l}
                       <li>
-                        <a class="underline underline-offset-2 hover:text-blue-700"
+                        <a class="underline underline-offset-2 hover:text-gray-700"
                            href={l.url} target="_blank" rel="noopener noreferrer">{l.label}</a>
                       </li>
                     {/each}

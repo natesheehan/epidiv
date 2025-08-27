@@ -107,7 +107,7 @@
     <div class="mt-12 md:mt-16 rounded-2xl border border-neutral-200 p-6 md:p-8 bg-neutral-50/50">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <p class="text-base md:text-lg text-neutral-800">
-          Ready to dive in? Browse the <a href="/schedule" class="underline underline-offset-2 hover:text-blue-700">schedule</a> or hit <a href="#footer-contact" class="underline underline-offset-2 hover:text-blue-700">Contact</a> in the footer to join us.
+          Ready to dive in? Browse the <a href="/schedule" class="underline underline-offset-2 hover:text-gray-700">schedule</a> or <a href={`mailto:${recipients.join(',')}?subject=${subject}`} class="underline underline-offset-2 hover:text-gray-700">contact</a> us to join in.
         </p>
         <a href="/schedule"
            class="inline-flex items-center justify-center rounded-full border border-neutral-900 px-4 py-2 text-sm font-medium hover:bg-neutral-900 hover:text-white transition">

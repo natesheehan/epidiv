@@ -348,7 +348,7 @@
                   {#each s.readings as r}
                     <li>
                       {#if r.url}
-                        <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                        <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-gray-700">{r.title}</a>
                       {:else}
                         {r.title}
                       {/if}
@@ -365,7 +365,7 @@
                   {#each s.background as r}
                     <li>
                       {#if r.url}
-                        <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                        <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-gray-700">{r.title}</a>
                       {:else}
                         {r.title}
                       {/if}
@@ -382,7 +382,7 @@
                   {#each s.media as r}
                     <li>
                       {#if r.url}
-                        <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                        <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-gray-700">{r.title}</a>
                       {:else}
                         {r.title}
                       {/if}
@@ -418,7 +418,7 @@
                       {#each s.readings as r}
                         <li>
                           {#if r.url}
-                            <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                            <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-gray-700">{r.title}</a>
                           {:else}
                             {r.title}
                           {/if}
@@ -433,7 +433,7 @@
                       {#each s.background as r}
                         <li>
                           {#if r.url}
-                            <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                            <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-gray-700">{r.title}</a>
                           {:else}
                             {r.title}
                           {/if}
@@ -448,7 +448,7 @@
                       {#each s.media as r}
                         <li>
                           {#if r.url}
-                            <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                            <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-gray-700">{r.title}</a>
                           {:else}
                             {r.title}
                           {/if}
