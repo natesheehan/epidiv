@@ -35,24 +35,40 @@
   <!-- Logos row -->
   <div class="max-w-6xl mx-auto px-4 pt-8">
     <div class="flex items-center justify-center gap-8 md:gap-10 flex-wrap">
-      <img
+      <a href="https://www.uib.no/en">
+              <img
         src="./bergen.svg"
         alt="Bergen logo"
-        class="w-24 h-12 md:w-28 md:h-14 object-contain fade-in-once"
+        class="w-24 h-12 md:w-28 md:h-14 object-contain fade-in-once hover:scale-115"
         style="animation-delay: 0s"
       />
+      </a>
+      <a href="https://www.exeter.ac.uk/">
+      <img
+        src="./exeter.png"
+        alt="exeter logo"
+        class="w-24 h-12 md:w-28 md:h-14 object-contain fade-in-once hover:scale-115"
+        style="animation-delay: 0.4s"
+      />      
+      </a>
+
+      <a href="https://www.sts.sot.tum.de/sts/arbeitsgruppen/philosophy-and-history-of-science-and-technology/">
       <img
         src="./tum.svg"
         alt="TUM logo"
-        class="w-24 h-12 md:w-28 md:h-14 object-contain fade-in-once"
+        class="w-24 h-12 md:w-28 md:h-14 object-contain fade-in-once hover:scale-115"
         style="animation-delay: 0.2s"
-      />
-      <img
+      />      
+      </a>
+
+      <a href="https://opensciencestudies.eu/">
+            <img
         src="./Phil_OS.png"
         alt="Phil_OS logo"
-        class="w-24 h-12 md:w-28 md:h-14 object-contain fade-in-once"
+        class="w-24 h-12 md:w-28 md:h-14 object-contain fade-in-once hover:scale-115"
         style="animation-delay: 0.4s"
       />
+      </a>
     </div>
   </div>
 
@@ -72,7 +88,7 @@
       <!-- Right: Contact link -->
       <div class="text-gray-700">
         <a
-          class="underline underline-offset-4 hover:text-blue-600 transition"
+          class="underline underline-offset-4 hover:text-gray-600 transition"
           href={`mailto:${recipients.join(',')}?subject=${subject}`}
         >
           Contact

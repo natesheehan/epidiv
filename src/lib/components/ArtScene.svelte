@@ -1,7 +1,7 @@
 <script>
   import { onMount, onDestroy } from "svelte";
 
-  const TEXT = "We are an international reading group who meet twice a month to discuss texts in the philosophy of science, feminist literature, and critical data studies. To join us, hit the contact button in the footer; or if you’re interested in our reading list, check out the schedule.";
+  const TEXT = "We are an international reading group who meet twice a month to discuss texts in the philosophy of science, feminist epistemology, and critical data studies. To join us, hit the contact button in the footer; or if you’re interested in our reading list, check out the schedule.";
 
   // ⏱️ Timing (ms)
   const TYPE_SPEED = 68;      // lower = faster typing
@@ -61,6 +61,7 @@
     min-height: calc(100vh - 0px);
     display: grid;
     place-items: center;
+    margin-top: -5%;
     padding: 5vmin 6vmin;
     box-sizing: border-box;
     font-family: 'Space Grotesk', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
@@ -80,11 +81,11 @@
     margin: 0 auto;
     font-weight: 600;
     line-height: 1.25;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
     text-wrap: balance;
     text-align: center;
     /* Responsive sizes */
-    font-size: clamp(1.35rem, 4vw + 0.5rem, 3rem);
+    font-size: clamp(2.35rem, 4vw + 0.5rem, 3rem);
   }
 
   /* Cursor */
