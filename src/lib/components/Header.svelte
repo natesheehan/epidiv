@@ -49,7 +49,6 @@
     >
       <div class="bg-white shadow-xl rounded-b-2xl overflow-hidden border-x border-b border-gray-200">
         <ul class="flex flex-col divide-y divide-gray-200 text-base font-medium">
-          <li><a href="/" on:click={close} class="block px-4 py-3 hover:bg-gray-50 transition">EpiDiv</a></li>
           <li><a href="/info" on:click={close} class="block px-4 py-3 hover:bg-gray-50 transition">Info</a></li>
           <li><a href="/schedule" on:click={close} class="block px-4 py-3 hover:bg-gray-50 transition">Schedule</a></li>
           <li><a href="/outputs" on:click={close} class="block px-4 py-3 hover:bg-gray-50 transition">Outputs</a></li>
