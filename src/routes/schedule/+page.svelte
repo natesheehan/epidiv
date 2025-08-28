@@ -6,6 +6,160 @@
 
   let active = '2025/2026';
 
+  // NEW: 2025/2026 schedule
+  const sessions_2526 = [
+    {
+      date: '19/09/2025',
+      theme: 'Local and global epistemologies',
+      readings: [
+        { title: 'Büter, Anke. 2010. “Social Objectivity and the Problem of Local Epistemologies.” Analyse & Kritik 32(2): 213–30.', url: 'https://doi.org/10.1515/auk-2010-0202' },
+        { title: 'Longino, Helen E. 2002. “Pluralism and Local Epistemologies” in The Fate of Knowledge. Princeton: Princeton University Press, pp. 175–202.' },
+        { title: 'Ludwig, David. 2021. “Introduction: Reimagining Epistemology and Philosophy of Science from a Global Perspective.” In Global Epistemologies and Philosophies of Science. Routledge.' }
+      ],
+      background: [
+        { title: 'El-Hani, C. N., Poliseli, L., & Ludwig, D. (2022). Beyond the divide… Studies in History and Philosophy of Science 91: 296–306.', url: 'https://doi.org/10.1016/j.shpsa.2021.11.004' }
+      ],
+      media: [
+        { title: 'Leunig — Globalisation (cartoon)', url: 'https://www.leunig.com.au/works/recent-cartoons/495-globalisation' }
+      ]
+    },
+    {
+      date: '03/10/2025',
+      theme: 'Butterflies, Jaguars, & Shamanism: Political and Ontological Challenges of Diversity',
+      readings: [
+        { title: 'Langdon, Esther J. (2016). “The performance of diversity: shamanism as a performative mode.” GIS Gesture, Image and Sound. Journal of Anthropology 1(1): 9–39.' },
+        { title: 'Makovec, D. (2023/2024). Entirely Different Kinds of Beast… Philosophy of the Social Sciences 54(4): 327–353.', url: 'https://doi.org/10.1177/00483931231216773' }
+      ],
+      background: [
+        { title: 'Rowett, Catherine. 2025. Being, becoming, and transforming: A discussion of Of jaguars and butterflies. HAU 15(2): 466–470.' }
+      ],
+      media: [
+        { title: 'SIONA: De-mining Sacred Space in the Amazon (video)', url: 'https://www.newyorker.com/video/watch/the-effort-to-de-mine-sacred-space-in-the-amazon' }
+      ]
+    },
+    {
+      date: '17/10/2025',
+      theme: 'Scientific Disagreement',
+      readings: [
+        { title: 'Cocchiaro, M.Z., Trpin, B. 2025. The puzzle of scientific disagreement. EJPS 15: 35.', url: 'https://doi.org/10.1007/s13194-025-00662-4' },
+        { title: 'Cruz, H. De, & De Smedt, J. 2013. The Value of Epistemic Disagreement… SHPS A 44(2): 169–177.', url: 'https://doi.org/10.1016/j.shpsa.2013.02.002' }
+      ],
+      background: [
+        { title: 'Šešelja, D. 2021. Some lessons from simulations of scientific disagreements. Synthese 198(Suppl 25): 6143–6158.', url: 'https://doi.org/10.1007/s11229-019-02182-0' }
+      ],
+      media: [
+        { title: 'Find a debate…' }
+      ]
+    },
+    {
+      date: '31/10/2025',
+      theme: 'Pluralism',
+      readings: [
+        { title: 'Chang, Hasok. 2012. [pick a chapter] Is Water H2O? Evidence, Realism and Pluralism. Springer.' },
+        { title: 'Stengers, I. 2011. “Comparison as a Matter of Concern.” Common Knowledge 17(1): 48–63.', url: 'https://muse.jhu.edu/article/418671' },
+        { title: 'Mitchell, Sandra D. 2003. Biological Complexity and Integrative Pluralism. CUP.' }
+      ],
+      background: [],
+      media: [
+        { title: 'Krauss, Rosalind. “Sculpture in the Expanded Field.” October 8 (1979): 31–44.', url: 'https://doi.org/10.2307/778224' }
+      ]
+    },
+    {
+      date: '14/11/2025',
+      theme: 'What sorts of diversity?',
+      readings: [
+        { title: 'Solomon, Miriam. 2006. “Norms of Epistemic Diversity.” Episteme 3(1): 23–36.', url: 'https://doi.org/10.1353/epi.0.0007' },
+        { title: 'Jeong, Tay. 2024. “Epistemic Diversity and Epistemic Advantage…” Hypatia 39(1): 97–117.', url: 'https://doi.org/10.1017/hyp.2023.106' },
+        { title: 'Stirling, A. 2007. A general framework for analysing diversity in STS. JR Soc Interface 4(15):707–19.', url: 'https://doi.org/10.1098/rsif.2007.0213' }
+      ],
+      background: [
+        { title: 'Franco, M. P. V., et al. 2022. “Diversity regained…” Science of the Total Environment 825: 154029.', url: 'https://www.sciencedirect.com/science/article/pii/S0048969722011214' }
+      ],
+      media: []
+    },
+    {
+      date: '28/11/2025',
+      theme: 'Diverse Perspectives on AI',
+      readings: [
+        { title: 'van Rooij, I., Guest, O., Adolfi, F. et al. 2024. Reclaiming AI as a Theoretical Tool… CBB 7: 616–636.', url: 'https://doi.org/10.1007/s42113-024-00217-5' },
+        { title: 'Lewis, J.E., Whaanga, H. & Yolgörmez, C. 2025. Abundant intelligences… AI & Society 40: 2141–2157.', url: 'https://doi.org/10.1007/s00146-024-02099-4' },
+        { title: 'Leonelli, S. 2025. Environmental Intelligence… Harvard Data Science Review.', url: 'https://doi.org/10.1162/99608f92.ac7c1504' }
+      ],
+      background: [],
+      media: [
+        { title: 'Joan Slonczewski — “Microbe” (novel info)', url: 'https://www.davidmswitzer.com/slonczewski/microbe2.html' }
+      ]
+    },
+    {
+      date: '12/12/2025',
+      theme: 'Epistemic Injustice and Social Justice',
+      readings: [
+        { title: 'Ludwig, D. 2025. “It’s a Shame That You Can’t Afford Rent…” Social Epistemology.', url: 'https://www.tandfonline.com/doi/full/10.1080/02691728.2025.2472783' },
+        { title: 'Bufkin, S. 2024. “Racism, epistemic injustice, and ideology critique.”', url: 'https://journals.sagepub.com/doi/10.1177/01914537241244824' },
+        { title: 'Anderson, E. 2012. “Epistemic Justice as a Virtue of Social Institutions.”', url: 'https://www.tandfonline.com/doi/full/10.1080/02691728.2011.652211' }
+      ],
+      background: [
+        { title: 'Cummings, S., Dhewa, C., Kemboi, G., & Young, S. 2023. Doing Epistemic Justice in Sustainable Development. Sustainable Development 31(3): 1965–77.', url: 'https://doi.org/10.1002/sd.2497' }
+      ],
+      media: []
+    },
+    // --- Winter break ---
+    {
+      date: '30/01/2026',
+      theme: 'Hermeneutical injustice',
+      readings: [
+        { title: 'Arianna Falbo: Hermeneutical Injustice: Distortion and Conceptual Aptness | Hypatia | Cambridge Core' },
+        { title: 'Paulina Sliwa: Making sense of things: Moral inquiry as hermeneutical inquiry (2024).' , url: 'https://onlinelibrary.wiley.com/doi/full/10.1111/phpr.12941' },
+        { title: 'Coliva, A. 2024. Hysteria, Hermeneutical Injustice and Conceptual Engineering. Social Epistemology 39(2): 121–133.', url: 'https://doi.org/10.1080/02691728.2024.2400089' }
+      ],
+      background: [
+        { title: 'Nicole Dular: One Too Many: Hermeneutical Excess as Hermeneutical Injustice | Hypatia | Cambridge Core' },
+        { title: 'Anderson, Ellie. 2023. “Hermeneutic Labor…” Hypatia 38(1): 177–97.', url: 'https://doi.org/10.1017/hyp.2023.11' }
+      ],
+      media: [
+        { title: 'Optional film: Witches (MUBI)', url: 'https://mubi.com/en/gb/films/witches' }
+      ]
+    },
+    {
+      date: '13/02/2026',
+      theme: 'Education',
+      readings: [
+        { title: 'Siegel, H. 2006. Epistemological Diversity and Education Research: Much Ado About Nothing Much? Educational Researcher 35(2): 3–12.', url: 'https://doi.org/10.3102/0013189X035002003' },
+        { title: 'Horsthemke, K. 2021. Diversity and Epistemic Marginalisation… Studies in Philosophy and Education 40(6): 549–65.', url: 'https://doi.org/10.1007/s11217-021-09764-x' },
+        { title: 'Omodan, B. I. 2024. The Roles of Epistemology and Decoloniality… Globalisation, Societies and Education.', url: 'https://doi.org/10.1080/14767724.2024.2335661' }
+      ],
+      background: [],
+      media: []
+    },
+    {
+      date: '27/02/2026',
+      theme: 'Diversity, Policy Making & Uncertainty',
+      readings: [
+        { title: 'Brugnach, M., Dewulf, A., Pahl-Wostl, C., & Taillieu, T. 2008. Toward a Relational Concept of Uncertainty. Ecology and Society 13(2).', url: 'http://www.jstor.org/stable/26267972' },
+        { title: 'Honnacker, A. 2023. Beyond Evidence: Experimental Policy-Making in Uncertain Times. Inquiry.', url: 'https://doi.org/10.1080/0020174X.2023.2203162' }
+      ],
+      background: [
+        { title: 'Kim, M. H., & Dankel, D. J. 2025. Are We Ready to Be Wrong? Futures 166: 103520.', url: 'https://doi.org/10.1016/j.futures.2024.103520' },
+        { title: 'Guerrero Mc Manus, S. 2025. Dismantling Science, Dismantling Human Rights… Tapuya 8(1).', url: 'https://doi.org/10.1080/25729861.2025.2469405' }
+      ],
+      media: []
+    },
+    {
+      date: '13/03/2026',
+      theme: 'Open Science Practices and Movements',
+      readings: [
+        { title: 'Garzino Demo, L. 2025. “Preregistration Is Not a Ceiling: But It Can Become One.” Synthese 205(3): 126.', url: 'https://doi.org/10.1007/s11229-024-04828-0' },
+        { title: 'Elliott, S., & Sterner, B. 2025. How Open Science Organizations Generate Epistemic Oppression. EJPS 15(3): 47.', url: 'https://doi.org/10.1007/s13194-025-00674-0' },
+        { title: 'Peterson, D., & Panofsky, A. 2023. Metascience as a Scientific Social Movement. Minerva 61(2): 147–74.', url: 'https://doi.org/10.1007/s11024-023-09490-3' }
+      ],
+      background: [
+        { title: 'Mattern, Shannon. 2023. Reparative Redaction. Library Stack.', url: 'https://www.librarystack.org/reparative-redaction/' },
+        { title: 'Mattern, Shannon. 2015. “Middlewhere: Landscapes of Library Logistics.” Urban Omnibus.' }
+      ],
+      media: []
+    }
+  ];
+
   const sessions_2425 = [
     {
       date: '19/07/2024',
@@ -327,11 +481,137 @@
   <!-- Content -->
   <div class="max-w-6xl mx-auto px-4 pb-16">
     {#if active === '2025/2026'}
-      <div class="rounded-xl border border-neutral-200 p-8 text-center">
-        <p class="text-lg sm:text-xl">Coming soon.</p>
-        <p class="text-sm text-neutral-500 mt-2">Check back for next year’s reading list.</p>
-      </div>
-    {:else}
+  <!-- Mobile: cards -->
+  <div class="grid gap-4 md:hidden">
+    {#each sessions_2526 as s}
+      <article class="rounded-xl border border-neutral-200 p-4">
+        <div class="flex items-baseline justify-between gap-3">
+          <h3 class="font-semibold">{s.theme}</h3>
+          <span class="text-xs px-2 py-1 rounded-full bg-neutral-100">{s.date}</span>
+        </div>
+
+        {#if s.readings?.length}
+          <div class="mt-3">
+            <h4 class="text-sm font-medium text-neutral-600">Readings</h4>
+            <ul class="mt-1 space-y-1 text-sm leading-snug">
+              {#each s.readings as r}
+                <li>
+                  {#if r.url}
+                    <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                  {:else}
+                    {r.title}
+                  {/if}
+                </li>
+              {/each}
+            </ul>
+          </div>
+        {/if}
+
+        {#if s.background?.length}
+          <div class="mt-3">
+            <h4 class="text-sm font-medium text-neutral-600">Supplementary reading</h4>
+            <ul class="mt-1 space-y-1 text-sm leading-snug">
+              {#each s.background as r}
+                <li>
+                  {#if r.url}
+                    <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                  {:else}
+                    {r.title}
+                  {/if}
+                </li>
+              {/each}
+            </ul>
+          </div>
+        {/if}
+
+        {#if s.media?.length}
+          <div class="mt-3">
+            <h4 class="text-sm font-medium text-neutral-600">Optional Art/Media</h4>
+            <ul class="mt-1 space-y-1 text-sm leading-snug">
+              {#each s.media as r}
+                <li>
+                  {#if r.url}
+                    <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                  {:else}
+                    {r.title}
+                  {/if}
+                </li>
+              {/each}
+            </ul>
+          </div>
+        {/if}
+      </article>
+    {/each}
+  </div>
+
+  <!-- Desktop: table -->
+  <div class="hidden md:block overflow-x-auto rounded-xl border border-neutral-200">
+    <table class="w-full text-left text-sm">
+      <thead class="bg-neutral-50 text-neutral-600">
+        <tr>
+          <th class="px-4 py-3 w-32">Date</th>
+          <th class="px-4 py-3 w-80">Theme</th>
+          <th class="px-4 py-3">Readings</th>
+          <th class="px-4 py-3">Supplementary</th>
+          <th class="px-4 py-3">Optional Art/Media</th>
+        </tr>
+      </thead>
+      <tbody>
+        {#each sessions_2526 as s, i}
+          <tr class={i % 2 ? 'bg-white' : 'bg-neutral-50/40'}>
+            <td class="align-top px-4 py-3 whitespace-nowrap text-neutral-700">{s.date}</td>
+            <td class="align-top px-4 py-3 font-semibold">{s.theme}</td>
+            <td class="align-top px-4 py-3">
+              {#if s.readings?.length}
+                <ul class="list-disc pl-5 space-y-1">
+                  {#each s.readings as r}
+                    <li>
+                      {#if r.url}
+                        <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                      {:else}
+                        {r.title}
+                      {/if}
+                    </li>
+                  {/each}
+                </ul>
+              {/if}
+            </td>
+            <td class="align-top px-4 py-3">
+              {#if s.background?.length}
+                <ul class="list-disc pl-5 space-y-1">
+                  {#each s.background as r}
+                    <li>
+                      {#if r.url}
+                        <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                      {:else}
+                        {r.title}
+                      {/if}
+                    </li>
+                  {/each}
+                </ul>
+              {/if}
+            </td>
+            <td class="align-top px-4 py-3">
+              {#if s.media?.length}
+                <ul class="list-disc pl-5 space-y-1">
+                  {#each s.media as r}
+                    <li>
+                      {#if r.url}
+                        <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-blue-700">{r.title}</a>
+                      {:else}
+                        {r.title}
+                      {/if}
+                    </li>
+                  {/each}
+                </ul>
+              {/if}
+            </td>
+          </tr>
+        {/each}
+      </tbody>
+    </table>
+  </div>
+{:else}
       <!-- Mobile: cards -->
       <div class="grid gap-4 md:hidden">
         {#each sessions_2425 as s}
