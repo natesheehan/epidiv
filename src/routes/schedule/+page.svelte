@@ -456,6 +456,7 @@
 <section class="min-h-screen bg-white text-neutral-900 font-[Space_Grotesk]">
   <!-- Toggle -->
   <div class="max-w-6xl mx-auto px-4 pt-10 pb-6">
+    
     <div class="inline-flex rounded-full border border-neutral-200 overflow-hidden">
       <button
         class="px-4 sm:px-6 py-2 text-sm sm:text-base transition"
@@ -744,6 +745,9 @@
       </div>
     {/if}
   </div>
+
+  <p class="text-center mb-5">Our schedule isn't fixed and if you would like to suggest a reading or art viewing please get in touch.</p>
+      
 </section>
 
 <Footer/>
