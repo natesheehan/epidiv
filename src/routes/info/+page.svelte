@@ -75,7 +75,7 @@
       <aside class="lg:col-span-4">
         <div class="rounded-2xl border border-neutral-200 p-5 md:p-6 sticky top-6">
           <h2 class="text-lg font-semibold">Meeting times</h2>
-          <p class="mt-1 text-sm text-neutral-600">Starting again in <strong>September</strong>. Fortnightly on Fridays (90 minutes).</p>
+          <p class="mt-1 text-sm text-neutral-600">Starting again on <strong>September 19th</strong>. Fortnightly on Fridays (90 minutes).</p>
           <ul class="mt-4 space-y-2 text-sm">
             <li class="flex items-center justify-between rounded-lg border border-neutral-100 px-3 py-2">
               <span class="text-neutral-600">BST/GMT</span>
