@@ -6,6 +6,31 @@
 
   let active = '2025/2026';
 
+  // Svelte action: add class when element enters viewport, then unobserve
+function inView(node, options = { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.1 }) {
+  // Respect reduced motion
+  const prefersReduced = typeof window !== 'undefined' &&
+    window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReduced || typeof IntersectionObserver === 'undefined') {
+    node.classList.add('in-view');
+    return { destroy() {} };
+  }
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        node.classList.add('in-view');
+        io.unobserve(node); // trigger once
+      }
+    });
+  }, options);
+
+  io.observe(node);
+  return { destroy() { io.disconnect(); } };
+}
+
+
   // NEW: 2025/2026 schedule
   const sessions_2526 = [
     {
@@ -559,7 +584,12 @@
       </thead>
       <tbody>
         {#each sessions_2526 as s, i}
-          <tr class={i % 2 ? 'bg-white' : 'bg-neutral-50/40'}>
+  <tr
+    use:inView
+    class={`reveal-row ${i % 2 ? 'bg-white' : 'bg-neutral-50/40'}`}
+    style={`transition-delay:${Math.min(i * 60, 600)}ms`} 
+    >
+
             <td class="align-top px-4 py-3 whitespace-nowrap text-neutral-700">{s.date}</td>
             <td class="align-top px-4 py-3 font-semibold">{s.theme}</td>
             <td class="align-top px-4 py-3">
@@ -690,7 +720,12 @@
           </thead>
           <tbody>
             {#each sessions_2425 as s, i}
-              <tr class={i % 2 ? 'bg-white' : 'bg-neutral-50/40'}>
+  <tr
+    use:inView
+    class={`reveal-row ${i % 2 ? 'bg-white' : 'bg-neutral-50/40'}`}
+    style={`transition-delay:${Math.min(i * 60, 600)}ms`}
+  >
+
                 <td class="align-top px-4 py-3 whitespace-nowrap text-neutral-700">{s.date}</td>
                 <td class="align-top px-4 py-3 font-semibold">{s.theme}</td>
                 <td class="align-top px-4 py-3">
@@ -755,4 +790,19 @@
 <style>
   /* In case Tailwind isn’t available, keep it readable */
   :global(html) { font-family: 'Space Grotesk', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+
+  /* Row animation (desktop table only) */
+  /* Row animation (no vertical movement) */
+  :global(tr.reveal-row){
+    opacity: 0;
+    filter: blur(4px);
+    transition: opacity 1000ms ease, filter 1000ms ease;
+    will-change: opacity, filter;
+  }
+  :global(tr.reveal-row.in-view){
+    opacity: 1;
+    filter: blur(0);
+  }
+
 </style>
+

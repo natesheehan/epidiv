@@ -65,6 +65,10 @@
         <p class="mt-8 text-base md:text-lg leading-relaxed">
           This kookie pretext brings us nicely to introduce our <strong>Epistemic Diversity (EpiDiv)</strong> reading group. Much like the diverse kitchen and the layered cake, our group aims to unpack the multiple layers of meaning within scientific and philosophical discourses—delving into the intersections of gender, race, and knowledge to explore how diverse perspectives shape and enrich scientific knowledge.
         </p>
+
+        <p class="mt-8 text-base md:text-lg leading-relaxed">
+          The reading group is currently curated & cordinated by <a class="text-gray-600 font-bold" href="https://rosetrappes.wordpress.com/">Rose Trappes</a> and <a class="text-gray-600 font-bold" href="https://nsheehan.vercel.app/">Nathanael Sheehan</a>. The group meets every two weeks and reads texts primarily in English. Discussions are typically facilitated using the <a class="text-gray-600 font-bold" href="https://www.sessionlab.com/methods/finger-rules">finger rule.</a>
+        </p>
       </article>
 
       <!-- Side card: meeting times -->
@@ -107,7 +111,7 @@
     <div class="mt-12 md:mt-16 rounded-2xl border border-neutral-200 p-6 md:p-8 bg-neutral-50/50">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <p class="text-base md:text-lg text-neutral-800">
-          Ready to dive in? Browse the <a href="/schedule" class="underline underline-offset-2 hover:text-gray-700">schedule</a> or <a href={`mailto:${recipients.join(',')}?subject=${subject}`} class="underline underline-offset-2 hover:text-gray-700">contact</a> us to join in.
+          Fancy joining? Browse the <a href="/schedule" class="underline underline-offset-2 hover:text-gray-700">schedule</a> or <a href={`mailto:${recipients.join(',')}?subject=${subject}`} class="underline underline-offset-2 hover:text-gray-700">contact</a> us to join in.
         </p>
         <a href="/schedule"
            class="inline-flex items-center justify-center rounded-full border border-neutral-900 px-4 py-2 text-sm font-medium hover:bg-neutral-900 hover:text-white transition">

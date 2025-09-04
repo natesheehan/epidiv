@@ -25,7 +25,7 @@
 <section class="min-h-screen bg-white text-neutral-900 font-[Space_Grotesk]">
   <div class="max-w-6xl mx-auto px-4 pt-10 pb-16">
     <p class="text-center font-semibold">
-      The EpiDiv reading group has produced several outputs over its duration.
+      Outputs from the EpiDiv reading group.
     </p>
 
     <!-- Mobile: card layout -->
