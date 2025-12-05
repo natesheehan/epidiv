@@ -103,7 +103,7 @@ function inView(node, options = { root: null, rootMargin: '0px 0px -10% 0px', th
       media: []
     },
     {
-      date: '28/11/2025',
+      date: '05/12/2025',
       theme: 'Diverse Perspectives on AI',
       readings: [
         { title: 'van Rooij, I., Guest, O., Adolfi, F. et al. 2024. Reclaiming AI as a Theoretical Tool… CBB 7: 616–636.', url: 'https://doi.org/10.1007/s42113-024-00217-5' },
@@ -116,7 +116,7 @@ function inView(node, options = { root: null, rootMargin: '0px 0px -10% 0px', th
       ]
     },
     {
-      date: '12/12/2025',
+      date: '19/01/2026',
       theme: 'Epistemic Injustice and Social Justice',
       readings: [
         { title: 'Ludwig, D. 2025. “It’s a Shame That You Can’t Afford Rent…” Social Epistemology.', url: 'https://www.tandfonline.com/doi/full/10.1080/02691728.2025.2472783' },
