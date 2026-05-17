@@ -22,9 +22,6 @@
     <h1 class="text-3xl md:text-5xl font-semibold leading-tight tracking-tight text-balance">
       For Forks’ Sake: why epistemic diversity matters.
     </h1>
-    <p class="mt-4 md:mt-6 text-base md:text-lg text-neutral-600 max-w-3xl">
-      An introduction to the EpiDiv reading group—where we explore how diverse perspectives shape and enrich scientific knowledge.
-    </p>
     <div class="mt-6 flex flex-wrap gap-3">
       <a href="/schedule"
          class="inline-flex items-center rounded-full border border-neutral-900 px-4 py-2 text-sm font-medium hover:bg-neutral-900 hover:text-white transition">
@@ -63,7 +60,7 @@
         </figure>
 
         <p class="mt-8 text-base md:text-lg leading-relaxed">
-          This kookie pretext brings us nicely to introduce our <strong>Epistemic Diversity (EpiDiv)</strong> reading group. Much like the diverse kitchen and the layered cake, our group aims to unpack the multiple layers of meaning within scientific and philosophical discourses—delving into the intersections of gender, race, and knowledge to explore how diverse perspectives shape and enrich scientific knowledge.
+          This kookie pretext brings us nicely to introduce our <strong>Epistemic Diversity (EpiDiv)</strong> reading group. Much like the diverse kitchen and the layered cake, our group aims to unpack the multiple layers of meaning within scientific and philosophical discourses by delving into the intersections of gender, race, and knowledge to explore how diverse perspectives shape scientific knowledge.
         </p>
 
         <p class="mt-8 text-base md:text-lg leading-relaxed">
@@ -114,7 +111,9 @@
           Fancy joining? Browse the <a href="/schedule" class="underline underline-offset-2 hover:text-gray-700">schedule</a> or <a href={`mailto:${recipients.join(',')}?subject=${subject}`} class="underline underline-offset-2 hover:text-gray-700">contact</a> us to join in.
         </p>
         <a href="/schedule"
-           class="inline-flex items-center justify-center rounded-full border border-neutral-900 px-4 py-2 text-sm font-medium hover:bg-neutral-900 hover:text-white transition">
+           class="inline-flex items-center justify-center rounded-full
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a border border-neutral-900 px-4 py-2 text-sm font-medium hover:bg-neutral-900 hover:text-white transition">
           Explore the reading list
         </a>
       </div>
