@@ -4,7 +4,7 @@
     import Header from "$lib/components/Header.svelte";
     import Footer from "$lib/components/Footer.svelte"; 
 
-  let active = '2025/2026';
+  let active = 'Book Club';
 
   // Svelte action: add class when element enters viewport, then unobserve
 function inView(node, options = { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.1 }) {
@@ -181,6 +181,21 @@ function inView(node, options = { root: null, rootMargin: '0px 0px -10% 0px', th
         { title: 'Mattern, Shannon. 2023. Reparative Redaction. Library Stack.', url: 'https://www.librarystack.org/reparative-redaction/' },
         { title: 'Mattern, Shannon. 2015. “Middlewhere: Landscapes of Library Logistics.” Urban Omnibus.' }
       ],
+      media: []
+    }
+  ];
+
+  const sessions_bookclub = [
+    {
+      date: '17/04/2026 – 14/06/2026',
+      theme: 'Book Club: Non-Ideal Epistemology',
+      readings: [
+        {
+          title: 'Non-Ideal Epistemology by Robin McKenna',
+          url: 'https://academic.oup.com/book/45814'
+        }
+      ],
+      background: [],
       media: []
     }
   ];
@@ -501,6 +516,15 @@ function inView(node, options = { root: null, rootMargin: '0px 0px -10% 0px', th
       >
         2025/2026
       </button>
+      <button
+        class="px-4 sm:px-6 py-2 text-sm sm:text-base transition border-l border-neutral-200"
+        class:!bg-neutral-900={active === 'Book Club'}
+        class:!text-white={active === 'Book Club'}
+        on:click={() => active = 'Book Club'}
+        aria-pressed={active === 'Book Club'}
+      >
+        Book Club
+      </button>
     </div>
   </div>
 
@@ -642,6 +666,76 @@ function inView(node, options = { root: null, rootMargin: '0px 0px -10% 0px', th
       </tbody>
     </table>
   </div>
+{:else if active === 'Book Club'}
+      <!-- Mobile: cards -->
+      <div class="grid gap-4 md:hidden">
+        {#each sessions_bookclub as s}
+          <article class="rounded-xl border border-neutral-200 p-4">
+            <div class="flex items-baseline justify-between gap-3">
+              <h3 class="font-semibold">{s.theme}</h3>
+              <span class="text-xs px-2 py-1 rounded-full bg-neutral-100">{s.date}</span>
+            </div>
+
+            {#if s.readings?.length}
+              <div class="mt-3">
+                <h4 class="text-sm font-medium text-neutral-600">Readings</h4>
+                <ul class="mt-1 space-y-1 text-sm leading-snug">
+                  {#each s.readings as r}
+                    <li>
+                      {#if r.url}
+                        <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-gray-700">{r.title}</a>
+                      {:else}
+                        {r.title}
+                      {/if}
+                    </li>
+                  {/each}
+                </ul>
+              </div>
+            {/if}
+          </article>
+        {/each}
+      </div>
+
+      <!-- Desktop: minimal table -->
+      <div class="hidden md:block overflow-x-auto rounded-xl border border-neutral-200">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-neutral-50 text-neutral-600">
+            <tr>
+              <th class="px-4 py-3 w-32">Date</th>
+              <th class="px-4 py-3 w-80">Theme</th>
+              <th class="px-4 py-3">Readings</th>
+            </tr>
+          </thead>
+          <tbody>
+            {#each sessions_bookclub as s, i}
+  <tr
+    use:inView
+    class={`reveal-row ${i % 2 ? 'bg-white' : 'bg-neutral-50/40'}`}
+    style={`transition-delay:${Math.min(i * 60, 600)}ms`}
+  >
+
+                <td class="align-top px-4 py-3 whitespace-nowrap text-neutral-700">{s.date}</td>
+                <td class="align-top px-4 py-3 font-semibold">{s.theme}</td>
+                <td class="align-top px-4 py-3">
+                  {#if s.readings?.length}
+                    <ul class="list-disc pl-5 space-y-1">
+                      {#each s.readings as r}
+                        <li>
+                          {#if r.url}
+                            <a href={r.url} target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-gray-700">{r.title}</a>
+                          {:else}
+                            {r.title}
+                          {/if}
+                        </li>
+                      {/each}
+                    </ul>
+                  {/if}
+                </td>
+              </tr>
+            {/each}
+          </tbody>
+        </table>
+      </div>
 {:else}
       <!-- Mobile: cards -->
       <div class="grid gap-4 md:hidden">

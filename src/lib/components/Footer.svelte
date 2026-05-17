@@ -9,7 +9,8 @@
 
   const recipients = [
     'ns651@exeter.ac.uk',
-    'rose.trappes@uib.no'
+    'rose.trappes@uib.no',
+    "rena.alcalay@tum.de"
   ];
   const subject = encodeURIComponent('Epistemic Diversity reading group');
 

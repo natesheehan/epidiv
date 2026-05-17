@@ -67,7 +67,7 @@
         </p>
 
         <p class="mt-8 text-base md:text-lg leading-relaxed">
-          The reading group is currently curated & cordinated by <a class="text-gray-600 font-bold" href="https://rosetrappes.wordpress.com/">Rose Trappes</a> and <a class="text-gray-600 font-bold" href="https://nsheehan.vercel.app/">Nathanael Sheehan</a>. The group meets every two weeks and reads texts primarily in English. Discussions are typically facilitated using the <a class="text-gray-600 font-bold" href="https://www.sessionlab.com/methods/finger-rules">finger rule.</a>
+          The reading group is currently curated & cordinated by <a class="text-gray-600 font-bold" href="https://renabalcalay.com/">Rena Alcalay</a>, <a class="text-gray-600 font-bold" href="https://rosetrappes.wordpress.com/">Rose Trappes</a> and <a class="text-gray-600 font-bold" href="https://nsheehan.vercel.app/">Nathanael Sheehan</a>. The group meets every two weeks and reads texts primarily in English. Discussions are typically facilitated using the <a class="text-gray-600 font-bold" href="https://www.sessionlab.com/methods/finger-rules">finger rule.</a>
         </p>
       </article>
 
